@@ -1,0 +1,23 @@
+print("Thank you for choosing Python Pizza Delliveries")
+size = input()
+add_pepperoni = input()
+extra_cheese = input()
+bill = 0
+if size == "S":
+    bill += 150
+elif size == "M":
+    bill += 200
+else:
+    bill += 250
+
+if add_pepperoni == "Y" :
+    if size == "S" :
+        bill += 20
+    else :
+        bill += 30
+if extra_cheese == "Y":
+    bill += 10
+else:
+    bill += 0
+    
+print(f"Your final bill is : ₹{bill}.")
